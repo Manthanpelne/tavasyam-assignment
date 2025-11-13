@@ -260,34 +260,92 @@ const Dashboard = () => {
               </div>
 
               <div className="grid grid-cols-3 gap-4 w-full">
-                <div className="bg-[#06B6D4] flex p-5 text-white gap-3 rounded-lg w-full min-h-[168px]">
-                  <span className="p-2 mt-1 rounded-md bg-black/20 h-max">
-                    {" "}
-                   <svg xmlns="http://www.w3.org/2000/svg" className="w-6 opacity-55" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4" d="M14 13.6c0-1.436-1.343-2.6-3-2.6s-3 1.164-3 2.6v20.8c0 1.436 1.343 2.6 3 2.6s3-1.164 3-2.6zm26 0c0-1.436-1.343-2.6-3-2.6s-3 1.164-3 2.6v20.8c0 1.436 1.343 2.6 3 2.6s3-1.164 3-2.6zM8 18.667C8 17.194 6.657 16 5 16s-3 1.194-3 2.667v10.666C2 30.806 3.343 32 5 32s3-1.194 3-2.667zm38 0C46 17.194 44.657 16 43 16s-3 1.194-3 2.667v10.666C40 30.806 41.343 32 43 32s3-1.194 3-2.667zM14 27h20v-6H14z"/></svg>
-                  </span>
-                  <div>
-                    <h2 className="font-semibold">Calories</h2>
-                    <p className="text-xs pt-1">1800 kcl</p>
+                <div className="relative w-full min-h-[168px] rounded-lg overflow-hidden">
+                  <div
+                    className="absolute z-10 inset-0 bg-cover bg-bottom top-10"
+                    style={{ backgroundImage: "url('/v1.png')" }}
+                  ></div>
+                  <div className="absolute inset-0 bg-[#06B6D4] "></div>
+
+                  <div className="relative flex p-5 text-white gap-3 h-full">
+                    <span className="p-2 mt-1 rounded-md bg-black/20 h-max">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-6 opacity-55"
+                        viewBox="0 0 48 48"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linejoin="round"
+                          stroke-width="4"
+                          d="M14 13.6c0-1.436-1.343-2.6-3-2.6s-3 1.164-3 2.6v20.8c0 1.436 1.343 2.6 3 2.6s3-1.164 3-2.6zm26 0c0-1.436-1.343-2.6-3-2.6s-3 1.164-3 2.6v20.8c0 1.436 1.343 2.6 3 2.6s3-1.164 3-2.6zM8 18.667C8 17.194 6.657 16 5 16s-3 1.194-3 2.667v10.666C2 30.806 3.343 32 5 32s3-1.194 3-2.667zm38 0C46 17.194 44.657 16 43 16s-3 1.194-3 2.667v10.666C40 30.806 41.343 32 43 32s3-1.194 3-2.667zM14 27h20v-6H14z"
+                        />
+                      </svg>
+                    </span>
+                    <div>
+                      <h2 className="font-semibold">Workout</h2>
+                      <p className="text-xs pt-1 opacity-75">4 hours</p>
+                    </div>
                   </div>
                 </div>
-                <div className="bg-[#FB923C] flex p-5 text-white gap-3 rounded-lg w-full min-h-[168px]">
-                  <span className="p-1 rounded-md mt-1 bg-black/20 h-max">
-                    {" "}
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-8" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M14.5 10c0-.791 1.053-1.001 1.332-.26C16.508 11.53 17 13.134 17 14a5 5 0 0 1-10 0c0-.93.568-2.711 1.322-4.663c.975-2.528 1.463-3.792 2.066-3.86c.192-.022.403.017.575.107c.537.28.537 1.659.537 4.416a1.5 1.5 0 0 0 3 0Z"/><path d="m11 19l-.263-.657a3.4 3.4 0 0 1 .503-3.393a.973.973 0 0 1 1.52 0c.766.958.958 2.254.503 3.393L13 19"/></g></svg>
-                  </span>
-                  <div>
-                    <h2>Calories</h2>
-                    <p>1800 kcl</p>
+
+                <div className="relative w-full min-h-[168px] rounded-lg overflow-hidden">
+                  <div
+                    className="absolute z-10 inset-0 bg-cover bg-bottom top-10"
+                    style={{ backgroundImage: "url('/v2.png')" }}
+                  ></div>
+                  <div className="absolute inset-0 bg-[#F97316] "></div>
+
+                  <div className="relative flex p-5 text-white gap-3 h-full">
+                    <span className="p-1 rounded-md mt-1 bg-black/20 h-max">
+                      {" "}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-8"
+                        viewBox="0 0 24 24"
+                      >
+                        <g fill="none" stroke="currentColor" stroke-width="1">
+                          <path d="M14.5 10c0-.791 1.053-1.001 1.332-.26C16.508 11.53 17 13.134 17 14a5 5 0 0 1-10 0c0-.93.568-2.711 1.322-4.663c.975-2.528 1.463-3.792 2.066-3.86c.192-.022.403.017.575.107c.537.28.537 1.659.537 4.416a1.5 1.5 0 0 0 3 0Z" />
+                          <path d="m11 19l-.263-.657a3.4 3.4 0 0 1 .503-3.393a.973.973 0 0 1 1.52 0c.766.958.958 2.254.503 3.393L13 19" />
+                        </g>
+                      </svg>
+                    </span>
+                    <div>
+                      <h2 className="font-semibold">Calories</h2>
+                      <p className="text-xs pt-1 opacity-75">1800 kcl</p>
+                    </div>
                   </div>
                 </div>
-                <div className="bg-[#8B5CF6] flex p-5 text-white gap-3 rounded-lg w-full min-h-[168px]">
-                  <span className="p-3 rounded-md mt-1 bg-black/20 h-max">
-                    {" "}
-                 <svg xmlns="http://www.w3.org/2000/svg" className="w-4" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M200 246.84c8.81 58.62-7.33 90.67-52.91 97.41c-50.65 7.49-71.52-26.44-80.33-85.06c-11.85-78.88 16-127.94 55.71-131.1c36.14-2.87 68.71 60.14 77.53 118.75Zm23.65 162.69c3.13 33.28-14.86 64.34-42 69.66c-27.4 5.36-58.71-16.37-65.09-49.19s17.75-34.56 47.32-40.21s55.99-20.4 59.77 19.74ZM312 150.83c-8.81 58.62 7.33 90.67 52.9 97.41c50.66 7.49 71.52-26.44 80.33-85.06c11.86-78.89-16-128.22-55.7-131.1c-36.4-2.64-68.71 60.13-77.53 118.75Zm-23.65 162.7c-3.13 33.27 14.86 64.34 42 69.66c27.4 5.36 58.71-16.37 65.09-49.19s-17.75-34.56-47.32-40.22s-55.99-20.4-59.77 19.75Z"/></svg>
-                  </span>
-                  <div>
-                    <h2>Calories</h2>
-                    <p>1800 kcl</p>
+
+                <div className="relative w-full min-h-[168px] rounded-lg overflow-hidden">
+                  <div
+                    className="absolute z-10 inset-0 bg-cover bg-bottom top-10"
+                    style={{ backgroundImage: "url('/v3.png')" }}
+                  ></div>
+                  <div className="absolute inset-0 bg-[#8B5CF6] "></div>
+
+                  <div className="relative flex p-5 text-white gap-3 h-full">
+                    <span className="p-3 rounded-md mt-1 bg-black/20 h-max">
+                      {" "}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-4"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-miterlimit="10"
+                          stroke-width="32"
+                          d="M200 246.84c8.81 58.62-7.33 90.67-52.91 97.41c-50.65 7.49-71.52-26.44-80.33-85.06c-11.85-78.88 16-127.94 55.71-131.1c36.14-2.87 68.71 60.14 77.53 118.75Zm23.65 162.69c3.13 33.28-14.86 64.34-42 69.66c-27.4 5.36-58.71-16.37-65.09-49.19s17.75-34.56 47.32-40.21s55.99-20.4 59.77 19.74ZM312 150.83c-8.81 58.62 7.33 90.67 52.9 97.41c50.66 7.49 71.52-26.44 80.33-85.06c11.86-78.89-16-128.22-55.7-131.1c-36.4-2.64-68.71 60.13-77.53 118.75Zm-23.65 162.7c-3.13 33.27 14.86 64.34 42 69.66c27.4 5.36 58.71-16.37 65.09-49.19s-17.75-34.56-47.32-40.22s-55.99-20.4-59.77 19.75Z"
+                        />
+                      </svg>
+                    </span>
+                    <div>
+                      <h2 className="font-semibold">Steps</h2>
+                      <p className="text-xs pt-1 opacity-75">2200 steps</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -297,7 +355,6 @@ const Dashboard = () => {
               </div>
 
               <div className="min-h-[226px] space-y-4">
-
                 {/* <table>
                   <thead className="">
                     <td className="px-10">Food</td>
@@ -309,31 +366,40 @@ const Dashboard = () => {
                 </table> */}
 
                 <ul className="flex items-center justify-between p-3">
-                     <li className="px-2">Food</li>
-                      <li className="px-10">Meal</li>
-                       <li>Calories</li>
-                        <li>Priorities</li>
-                         <li>Carbs</li>
+                  <li className="px-2">Food</li>
+                  <li className="px-10">Meal</li>
+                  <li>Calories</li>
+                  <li>Priorities</li>
+                  <li>Carbs</li>
                 </ul>
-                  <ul className="flex items-center text-sm text-black/70 justify-between p-4 bg-white shadow-sm">
-                     <li className="flex text-black/80 font-semibold  items-center gap-2"> <span className="p-1 rounded-full bg-[#FFEDD5]">🫔</span> Buritto</li>
-                      <li>Pizza Burger</li>
-                       <li>Receiving</li>
-                        <li>01:00 AM</li>
-                         <li>20 gm</li>
-                </ul>
-
-                  <ul className="flex items-center text-black/70 text-sm justify-between p-4 bg-white shadow-sm">
-                      <li className="flex text-black/80 font-semibold items-center gap-2"> <span className="p-1 rounded-full bg-[#FFEDD5]">🍔</span> Burger</li>
-                      <li>Pizza Burger</li>
-                       <li>Receiving</li>
-                        <li>01:00 AM</li>
-                         <li>20 gm</li>
+                <ul className="flex items-center text-sm text-black/70 justify-between p-4 bg-white shadow-sm">
+                  <li className="flex text-black/80 font-semibold  items-center gap-2">
+                    {" "}
+                    <span className="p-1 rounded-full bg-[#FFEDD5]">
+                      🫔
+                    </span>{" "}
+                    Buritto
+                  </li>
+                  <li>Pizza Burger</li>
+                  <li>Receiving</li>
+                  <li>01:00 AM</li>
+                  <li>20 gm</li>
                 </ul>
 
-                
+                <ul className="flex items-center text-black/70 text-sm justify-between p-4 bg-white shadow-sm">
+                  <li className="flex text-black/80 font-semibold items-center gap-2">
+                    {" "}
+                    <span className="p-1 rounded-full bg-[#FFEDD5]">
+                      🍔
+                    </span>{" "}
+                    Burger
+                  </li>
+                  <li>Pizza Burger</li>
+                  <li>Receiving</li>
+                  <li>01:00 AM</li>
+                  <li>20 gm</li>
+                </ul>
               </div>
-
             </div>
 
             <div className=" lg:max-w-[318px] flex flex-col gap-10 lg:gap-0 md:flex-row lg:flex-col">
@@ -350,11 +416,7 @@ const Dashboard = () => {
                     <h3 className="mb-1 ">Monday</h3>
                     <div className="p-1 flex items-center justify-between">
                       <div className="flex items-center gap-3">
-                        <img
-                          className="w-10 h-10"
-                          src="/stretch.png"
-                          alt=""
-                        />
+                        <img className="w-10 h-10" src="/stretch.png" alt="" />
                         <span>
                           <p className="text-sm ">Stretch</p>
                           <p className="text-xs text-black/50">At 8:00</p>
@@ -369,11 +431,7 @@ const Dashboard = () => {
                     <h3 className="mb-1">Tuesday</h3>
                     <div className="p-1 flex items-center justify-between">
                       <div className="flex items-center gap-3">
-                        <img
-                          className="w-10 h-10"
-                           src="/stretch.png"        
-                          alt=""
-                        />
+                        <img className="w-10 h-10" src="/stretch.png" alt="" />
                         <span>
                           <p className="text-sm ">Back Stretch</p>
                           <p className="text-xs text-black/50">At 8:00</p>
@@ -388,11 +446,7 @@ const Dashboard = () => {
                     <h3 className="mb-1">Wednesday</h3>
                     <div className="p-1 flex items-center justify-between">
                       <div className="flex items-center gap-3">
-                        <img
-                          className="w-10 h-10"
-                            src="/stretch.png"
-                          alt=""
-                        />
+                        <img className="w-10 h-10" src="/stretch.png" alt="" />
                         <span>
                           <p className="text-sm ">Yoga</p>
                           <p className="text-xs text-black/50">At 8:00</p>
@@ -440,24 +494,30 @@ const Dashboard = () => {
                 </div>
               </div>
 
-              
-           <div className="p-6 min-h-48 w-full bg-violet-600 text-white rounded-xl shadow-2xl mt-32 relative ">
-      <div className="z-10 relative">
-        <h4 className="text-xl font-bold">50% off on Premium Membership</h4>
-        <p className="text-xs mt-2 opacity-90 max-w-[70%]">Upgrade on Premium Membership, and get unlimited benefits</p>
-        <button className="mt-4 px-6 py-2 bg-orange-500 text-white rounded-xl font-semibold shadow-md hover:bg-orange-600 transition">
-          Upgrade
-        </button>
-      </div>
-      {/* Simulated background graphic (people exercising) */}
-      <img
-        src="/run.png"
-        alt="Premium ad background"
-        className="absolute right-2.5 bottom-0 w-1/3 h-1/2 object-cover "
-        onError={(e) => e.target.style.display = 'none'}
-      />
-           </div>
-
+              <div className="p-6 overflow-hidden min-h-48 w-full bg-linear-to-b from-[#8276d4] to-[#a7a0d4] text-white rounded-xl shadow-2xl mt-32 relative ">
+                <div className="z-10 relative">
+                  <h4 className="text-xl font-bold">
+                    50% off on Premium Membership
+                  </h4>
+                  <p className="text-xs mt-2 opacity-90 max-w-[70%]">
+                    Upgrade on Premium Membership, and get unlimited benefits
+                  </p>
+                  <button className="mt-4 px-6 py-2 bg-orange-500 text-white rounded-xl font-semibold shadow-md hover:bg-orange-600 transition">
+                    Upgrade
+                  </button>
+                </div>
+                {/* Simulated background graphic (people exercising) */}
+                <img
+                  src="/pic.png"
+                  alt="Premium ad background"
+                  className="absolute z-20 right-0 bottom-2 rounded-full p-2 w-[25%] object-cover "
+                />
+                <img
+                  src="/Ellipse.png"
+                  alt="Premium ad background"
+                  className="absolute -right-6 -bottom-7  rounded-full p-2 w-[40%] object-cover "
+                />
+              </div>
             </div>
           </div>
         </section>
