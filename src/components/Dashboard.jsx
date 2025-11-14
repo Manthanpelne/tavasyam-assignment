@@ -60,7 +60,7 @@ const BarChart = ({ data }) => {
   };
 
   return (
-    <div className="bg-white py-6 px-8 rounded-xl shadow-lg">
+    <div className="bg-white py-6 px-8 rounded-lg shadow-md">
       <div className="min-h-[288px]">
       <div className="flex justify-between items-center mb-6">
         <h3 className="text-lg font-semibold text-black/70">Goal Progress</h3>
@@ -143,7 +143,7 @@ const Dashboard = () => {
           fixed top-0 left-0 w-72 lg:w-60 h-[1024px] bg-white shadow-2xl p-6 flex flex-col justify-between 
           transition-transform duration-300 z-50
           ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"}
-          md:relative md:translate-x-0 md:shadow-xl  md:border-r md:border-gray-200
+          md:relative md:translate-x-0 md:shadow-md  md:border-r md:border-gray-200
         `}
       >
         <Sidebar />
@@ -254,7 +254,7 @@ const Dashboard = () => {
           <div className=" flex flex-col lg:flex-row gap-8">
             <div className=" space-y-6 md:min-w-[786px] min-h-[959px]">
 
-              <div className="relative p-6 text-white rounded-xl shadow-2xl overflow-hidden w-full min-h-40">
+              <div className="relative p-6 text-white rounded-lg shadow-2xl overflow-hidden w-full min-h-40">
                 <div className="absolute inset-0">
                   <img
                     src="/ana.png"
@@ -505,7 +505,7 @@ const Dashboard = () => {
                 </div>
               </div>
 
-              <div className="py-6 px-4 overflow-hidden min-h-48 w-full bg-linear-to-b from-[#9083E2] to-[#a7a0d4] text-white rounded-xl shadow-2xl mt-36 relative ">
+              <div className="py-6 px-4 overflow-hidden min-h-48 w-full bg-linear-to-b from-[#9083E2] to-[#a7a0d4] text-white rounded-lg shadow-2xl mt-36 relative ">
                 <div className="z-10 relative">
                   <h4 className="font-semibold">
                     50% off on Premium Membership
