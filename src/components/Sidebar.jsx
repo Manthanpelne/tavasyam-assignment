@@ -1,56 +1,57 @@
-import React from 'react'
+import React from "react";
 
 const Sidebar = () => {
   return (
-    <div className='h-full'>
-        <h1 className='text-center flex items-center justify-center gap-2'>
-            <span className='text-lg text-[#F97316] font-semibold'>
-                  Fitness
-            </span>
-                <svg xmlns="http://www.w3.org/2000/svg" className='w-8 h-8' viewBox="0 0 48 48"><g fill="none" stroke-width="3"><path fill="#F97316" d="M9.102 13.727c.032-1.321.78-2.503 2.092-2.656c.378-.043.812-.071 1.306-.071s.928.028 1.306.072c1.313.152 2.06 1.334 2.092 2.655c.047 1.944.102 5.29.102 10.273s-.055 8.329-.102 10.273c-.032 1.321-.78 2.503-2.092 2.656c-.378.043-.812.071-1.306.071s-.928-.028-1.306-.071c-1.313-.153-2.06-1.335-2.092-2.656C9.055 32.329 9 28.983 9 24s.055-8.329.102-10.273"/><path fill="#fff" d="M15.993 26.98a1328 1328 0 0 0 16.014-.007a620 620 0 0 1 0-5.946a1328 1328 0 0 0-16.014-.007a609 609 0 0 1 0 5.96"/><path fill="#F97316" d="M38.898 13.727c-.032-1.321-.78-2.503-2.092-2.656c-.378-.043-.812-.071-1.306-.071s-.928.028-1.306.072c-1.313.152-2.06 1.334-2.092 2.655C32.055 15.671 32 19.017 32 24s.055 8.329.102 10.273c.032 1.321.78 2.503 2.092 2.656c.378.043.812.071 1.306.071s.928-.028 1.306-.071c1.313-.153 2.06-1.335 2.092-2.656c.047-1.944.102-5.29.102-10.273s-.055-8.329-.102-10.273M3.055 18.803c.036-1.49.984-2.748 2.474-2.796a15 15 0 0 1 .942 0c1.49.048 2.438 1.305 2.474 2.796C8.975 20.026 9 21.739 9 24s-.026 3.974-.055 5.197c-.036 1.49-.984 2.748-2.474 2.796a15 15 0 0 1-.942 0c-1.49-.048-2.438-1.305-2.474-2.796C3.025 27.974 3 26.261 3 24s.026-3.974.055-5.197m41.89 0c-.036-1.49-.984-2.748-2.474-2.796a15 15 0 0 0-.942 0c-1.49.048-2.438 1.305-2.474 2.796C39.025 20.026 39 21.739 39 24s.026 3.974.055 5.197c.036 1.49.984 2.748 2.474 2.796a15 15 0 0 0 .942 0c1.49-.048 2.438-1.305 2.474-2.796c.03-1.223.055-2.936.055-5.197s-.026-3.974-.055-5.197"/><path stroke="#F97316" stroke-linecap="round" stroke-linejoin="round" d="M9.102 13.727c.032-1.321.78-2.503 2.092-2.656c.378-.043.812-.071 1.306-.071s.928.028 1.306.072c1.313.152 2.06 1.334 2.092 2.655c.047 1.944.102 5.29.102 10.273s-.055 8.329-.102 10.273c-.032 1.321-.78 2.503-2.092 2.656c-.378.043-.812.071-1.306.071s-.928-.028-1.306-.071c-1.313-.153-2.06-1.335-2.092-2.656C9.055 32.329 9 28.983 9 24s.055-8.329.102-10.273m29.796 0c-.032-1.321-.78-2.503-2.092-2.656c-.378-.043-.812-.071-1.306-.071s-.928.028-1.306.072c-1.313.152-2.06 1.334-2.092 2.655C32.055 15.671 32 19.017 32 24s.055 8.329.102 10.273c.032 1.321.78 2.503 2.092 2.656c.378.043.812.071 1.306.071s.928-.028 1.306-.071c1.313-.153 2.06-1.335 2.092-2.656c.047-1.944.102-5.29.102-10.273s-.055-8.329-.102-10.273"/><path stroke="#F97316" stroke-linecap="round" stroke-linejoin="round" d="M15.993 26.982a1293 1293 0 0 0 16.014-.013m-.001-5.939c-2.414-.017-5.4-.03-9.007-.03c-2.668 0-4.998.007-7.007.018M3.055 18.803c.036-1.49.984-2.748 2.474-2.796a15 15 0 0 1 .942 0c1.49.048 2.438 1.305 2.474 2.796C8.975 20.026 9 21.739 9 24s-.026 3.974-.055 5.197c-.036 1.49-.984 2.748-2.474 2.796a15 15 0 0 1-.942 0c-1.49-.048-2.438-1.305-2.474-2.796C3.025 27.974 3 26.261 3 24s.026-3.974.055-5.197m41.89 0c-.036-1.49-.984-2.748-2.474-2.796a15 15 0 0 0-.942 0c-1.49.048-2.438 1.305-2.474 2.796C39.025 20.026 39 21.739 39 24s.026 3.974.055 5.197c.036 1.49.984 2.748 2.474 2.796a15 15 0 0 0 .942 0c1.49-.048 2.438-1.305 2.474-2.796c.03-1.223.055-2.936.055-5.197s-.026-3.974-.055-5.197"/></g></svg>
+    <div className="h-full flex flex-col gap-[16px]">
+      <div className=" flex  bg-white flex-col gap-[24px] max-w-[192px] h-full md:min-h-[840px]">
+        <h1 className="text-center pt-[8px] pb-[24px] border-b border-gray-300 flex items-center justify-center gap-2">
+          <span className="text-lg text-[#F97316] font-semibold">Fitness</span>
+          <img src="/Workout-bold.png" className="w-8 h-8" alt="" />
         </h1>
-
-        <div className='border-t border-[#d1cece] mt-6 pt-8 flex flex-col h-[94%] justify-between'>
-            <div>
-            <ul className='text-center text-sm font-semibold space-y-4 text-black/70'>
-                <li className='bg-[#F97316] text-white rounded-md py-3 flex gap-2 items-center pl-4'>
-                    <svg xmlns="http://www.w3.org/2000/svg" className='w-5 h-5' viewBox="0 0 24 24"><path fill="currentColor" d="M2 11V2h9v9zm0 2h9v9H2zM13 2v9h9V2zm0 20v-9h9v9z"/></svg>
-                    Overview</li>
-                <li className='py-2 flex gap-2 items-center pl-4'>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 opacity-55" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4" d="M14 13.6c0-1.436-1.343-2.6-3-2.6s-3 1.164-3 2.6v20.8c0 1.436 1.343 2.6 3 2.6s3-1.164 3-2.6zm26 0c0-1.436-1.343-2.6-3-2.6s-3 1.164-3 2.6v20.8c0 1.436 1.343 2.6 3 2.6s3-1.164 3-2.6zM8 18.667C8 17.194 6.657 16 5 16s-3 1.194-3 2.667v10.666C2 30.806 3.343 32 5 32s3-1.194 3-2.667zm38 0C46 17.194 44.657 16 43 16s-3 1.194-3 2.667v10.666C40 30.806 41.343 32 43 32s3-1.194 3-2.667zM14 27h20v-6H14z"/></svg>
-                     Workout</li>
-                <li className='py-2 flex gap-2 items-center pl-4'>
-<svg xmlns="http://www.w3.org/2000/svg" className='w-5 h-5' viewBox="0 0 2048 2048"><path fill="currentColor" d="M1668 129h124v1919H256V129h126V0h128v129h258V0h128v129h258V0h128v129h258V0h128zm-4 1791V257H384v1663zM1408 513v128H640V513zM640 1666v-128h768v128zm0-513v-128h768v128z"/></svg>
-                    Diet Plans</li>
-                <li  className='py-2 flex gap-2 items-center pl-4'>
-<svg xmlns="http://www.w3.org/2000/svg" className='w-5 h-5' viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M10.66 10.66A1.9 1.9 0 0 0 10.1 12a1.9 1.9 0 0 0 1.9 1.9a1.9 1.9 0 0 0 1.34-.56"/><path d="M12 6.3a5.7 5.7 0 1 0 5.7 5.7"/><path d="M12 2.5a9.5 9.5 0 1 0 9.5 9.5m-5.975-3.524L12.95 11.05"/><path d="M20.94 5.844L17.7 6.3l.456-3.24a.19.19 0 0 0-.313-.161l-2.148 2.137a1.9 1.9 0 0 0-.513 1.72l.342 1.72l1.72.341a1.9 1.9 0 0 0 1.72-.513L21.1 6.157a.19.19 0 0 0-.162-.313"/></g></svg>
-                    Goals</li>
-                <li  className='py-2 flex gap-2 items-center pl-4'>
-<svg xmlns="http://www.w3.org/2000/svg"  className='w-5 h-5' viewBox="0 0 24 24"><path fill="currentColor" d="m15.646 16.354l.708-.708l-3.854-3.854V7h-1v5.208zM12.003 21q-1.866 0-3.51-.708q-1.643-.709-2.859-1.924t-1.925-2.856T3 12.003t.709-3.51Q4.417 6.85 5.63 5.634t2.857-1.925T11.997 3t3.51.709q1.643.708 2.859 1.922t1.925 2.857t.709 3.509t-.708 3.51t-1.924 2.859t-2.856 1.925t-3.509.709M12 20q3.325 0 5.663-2.337T20 12t-2.337-5.663T12 4T6.337 6.338T4 12t2.338 5.663T12 20"/></svg>
-                     My Schedule</li>
-                <li  className='py-2 flex gap-2 items-center justify-between pl-4'>
-                  <span className='flex items-center gap-1'>
-<svg xmlns="http://www.w3.org/2000/svg" className='w-5 h-5' viewBox="0 0 512 512"><path fill="currentColor" d="M463 20.3L315.6 75.65L368.5 109C274 228 137.3 301.3 21.8 329.2l32.72 59.6C184.3 346.5 321.7 270.2 410.2 135.4l40.3 25.4zm7.7 116.7l-4.8 54.8l-51.3-32.4c-1.8 2.7-3.7 5.3-5.6 8V487h78V137zM320.1 265c-12.7 11-25.8 21.4-39.1 31.2V487h78V265zm-123.7 84c-14.4 7.6-28.8 14.6-43.4 21.2V487h78V349zM25 393v94h78v-94h-5.68c-14.82 5.5-29.63 10.6-44.35 15.3l-7.06 2.2l-9.6-17.5z"/></svg>
+        <div className="min-h-[752px]">
+          <ul className="text-center text-sm font-semibold space-y-4 text-black/70">
+            <li className="bg-[#F97316] text-white rounded-md py-3 flex gap-4 items-center px-4 ">
+              <img src="/Dashbaord.png" className="w-6 h-6 " alt="" />
+              Overview
+            </li>
+            <li className="py-2 flex gap-4 items-center px-4">
+              <img src="/Workout.png" alt="" />
+              Workout
+            </li>
+            <li className="py-2 flex gap-4 items-center px-4">
+              <img src="/Diet Plan.png" alt="" />
+              Diet Plans
+            </li>
+            <li className="py-2 flex gap-4 items-center px-4">
+              <img src="/Goal.png" alt="" />
+              Goals
+            </li>
+            <li className="py-2 flex gap-4 items-center px-4">
+              <img src="/Schedule.png" alt="" />
+              My Schedule
+            </li>
+            <li className="py-2 flex gap-4 items-center justify-between px-4">
+              <span className="flex gap-4 items-center">
+                <img src="/Progres.png" alt="" />
                 Progress
-                  </span>
-                  <span>{">"}</span>
-                </li>
-            </ul>
-          </div>
+              </span>
+              <img src="/Arrow-dark.png" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
 
-        <div className="space-y-3 text-black/70">
-             <div className="flex items-center space-x-3 p-3 ml-2 mr-2 rounded-xl hover:bg-gray-100 cursor-pointer">
-            <svg xmlns="http://www.w3.org/2000/svg" className='w-5 h-5' viewBox="0 0 24 24"><path fill="currentColor" d="M11.95 18q.525 0 .888-.363t.362-.887t-.362-.888t-.888-.362t-.887.363t-.363.887t.363.888t.887.362m-.9-3.85h1.85q0-.825.188-1.3t1.062-1.3q.65-.65 1.025-1.238T15.55 8.9q0-1.4-1.025-2.15T12.1 6q-1.425 0-2.312.75T8.55 8.55l1.65.65q.125-.45.563-.975T12.1 7.7q.8 0 1.2.438t.4.962q0 .5-.3.938t-.75.812q-1.1.975-1.35 1.475t-.25 1.825M12 22q-2.075 0-3.9-.787t-3.175-2.138T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"/></svg>
-            <span className="text-sm font-medium">Help</span>
-          </div>
-          <div className="flex items-center border-t border-gray-300 space-x-3 p-3 ml-2 mr-2   hover:bg-red-50 cursor-pointer">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3v-3m18-6V6a3 3 0 00-3-3H6a3 3 0 00-3 3v2"></path></svg>
-            <span className="text-sm font-medium">Logout</span>
-          </div>
-        </div>
-        </div>
+      <div className="flex items-center gap-4 p-3 ml-2 mr-2 rounded-xl hover:bg-gray-100 cursor-pointer">
+        <img src="/Help.png" alt="" />
+        <span className="text-sm font-medium">Help</span>
+      </div>
+
+      <div className="flex items-center gap-4 border-t border-gray-300 p-3 ml-2 mr-2   hover:bg-red-50 cursor-pointer">
+        <img src="/Logout.png" alt="" />
+        <span className="text-sm font-medium">Logout</span>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;
